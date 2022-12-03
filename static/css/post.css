@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Neonderthaw&display=swap");
+
+body {
+  background: #181818;
+}
+
+.chapter {
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-shadow: 0 0 0 transparent, 0 0 1px #ff003c, 0 0 5px rgba(255, 0, 60, 0.5),
+    0 0 10px #ff003c, 0 0 15px #ff003c, 0 0 20px #ff003c, 0 0 25px #ff003c,
+    0 0 30px #ff003c, 0 0 35px #ff003c;
+  font-family: "Creepster", cursive;
+  animation: animate-chapter 1.5s ease-in-out infinite;
+}
+
+.chapter-title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Griffy", cursive;
+
+  text-align: center;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  padding: 0px;
+  text-shadow: 0 0 0 transparent, 0 0 1px #ff003c, 0 0 5px rgba(255, 0, 60, 0.5),
+    0 0 10px #ff003c, 0 0 15px #ff003c, 0 0 20px #ff003c, 0 0 25px #ff003c,
+    0 0 30px #ff003c, 0 0 35px #ff003c;
+
+  animation: animate-chapter-title 2.25s infinite alternate;
+}
+
+.created_at {
+  color: black;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  word-spacing: 5px;
+  text-align: left;
+  padding-left: 10px;
+  margin-right: 0px;
+  padding: 0px;
+  text-shadow: 0 0 0 transparent, 0 0 1px #ff003c, 0 0 5px rgba(255, 0, 60, 0.5),
+    0 0 10px #ff003c, 0 0 15px #ff003c, 0 0 20px #ff003c, 0 0 25px #ff003c,
+    0 0 30px #ff003c, 0 0 35px #ff003c;
+}
+
+.matter {
+  justify-content: center;
+}
+
+.content {
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 0 transparent, 0 0 1px #0202f6, 0 0 5px #0202cb,
+    0 0 10px #0202ac, 0 0 15px #01019e, 0 0 20px #010178, 0 0 25px #000045,
+    0 0 30px #020243, 0 0 35px #010129;
+  word-spacing: 5px;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  animation: floating 2s ease-in-out infinite;
+}
+
+.content :hover {
+  animation-play-state: paused;
+}
+
+@keyframes animate-chapter {
+  50% {
+    color: rgb(3, 3, 137);
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+@keyframes animate-chapter-title {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
